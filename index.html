@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#YoProgramo Quiz</title>
+  </head>
+  <body>
+    <script type="module">
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const mod = urlParams.get('mod');
+        
+        if(mod==1){ var pagina = 'https://ueatmil18.github.io/1.html';}
+        if(mod==2){ var pagina = 'https://ueatmil18.github.io/2.html';}
+        if(mod==3){ var pagina = 'https://ueatmil18.github.io/3.html';}
+        if(mod==4){ var pagina = 'https://ueatmil18.github.io/4.html';}
+        if(mod==5){ var pagina = 'https://ueatmil18.github.io/5.html';}
+        if(mod==6){ var pagina = 'https://ueatmil18.github.io/6.html';}
+        if(mod==7){ var pagina = 'https://ueatmil18.github.io/7.html';}
+        if(mod==8){ var pagina = 'https://ueatmil18.github.io/8.html';}
+        if(mod==9){ var pagina = 'https://ueatmil18.github.io/9.html';}
+
+        document.location.href=pagina;    
+    </script>
+  </body>
+</html>
