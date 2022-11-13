@@ -31,12 +31,15 @@ export class UI {
   showScores(score) {
     var ImgScore="";
     if(score<3 || score ==3) {
-      ImgScore="florkLoca.jpg"
+      ImgScore="florkLoca.jpg";
     }else if(score>3 || score<7){
-      ImgScore="florkOk.jpg"
+      ImgScore="florkOk.jpg";
     }else {
-      ImgScore="florkNice.jpg"
+      ImgScore="florkNice.jpg";
     }
+    
+    ImgScore="florkNice.jpg";
+    console.log("img:"+ImgScore);
     const gameOverHTML = `
       <h1>Resultados</h1>
       <h2 id="score">Tus Puntos: ${score}</h2>
