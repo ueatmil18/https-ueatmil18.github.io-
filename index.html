@@ -11,9 +11,10 @@
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const mod = urlParams.get('mod');
+        const qz = urlParams.get('qz');
         
         if(mod==1){ var pagina = 'https://ueatmil18.github.io/1.html';}
-        if(mod==2){ var pagina = 'https://ueatmil18.github.io/2.html';}
+        if(mod==2){ var pagina = 'https://ueatmil18.github.io/2.html?auxQuiz='+qz;}
         if(mod==3){ var pagina = 'https://ueatmil18.github.io/3.html';}
         if(mod==4){ var pagina = 'https://ueatmil18.github.io/4.html';}
         if(mod==5){ var pagina = 'https://ueatmil18.github.io/5.html';}

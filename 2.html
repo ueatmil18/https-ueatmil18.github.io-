@@ -23,9 +23,16 @@
         <p id="progress">Pregunta x of y</p>
       </footer>
     </div>
-
     <!-- Scripts -->
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const mod = urlParams.get('mod');
+      var auxQuiz = urlParams.get('auxQuiz');
 
-    <script src="modulo2/app.js"    type="module"></script>
+      //  var auxQuiz = 1; 
+    </script>
+    <script src="modulo2/app.js" type="module"></script>
+    
   </body>
 </html>
