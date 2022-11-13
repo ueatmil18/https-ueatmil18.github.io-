@@ -40,7 +40,7 @@ export class UI {
     const gameOverHTML = `
       <h1>Resultados</h1>
       <h2 id="score">Tus Puntos: ${score}</h2>
-      <img src="imgs/${ImgScore}">`;
+      <img style="width:100px;height:100px;" src="imgs/${ImgScore}">`;
    
     const element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
