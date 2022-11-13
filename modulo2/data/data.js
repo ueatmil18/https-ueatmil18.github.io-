@@ -1,4 +1,4 @@
-export const data = [
+export const mod1dat1 = [
   {
     question: "En que NO se aplica el HTML?",
     choices: ["Crear un sitio web", "Definir logica de la web", "Interfaz de usuario responsiva", "Desarrollo de videojuegos"],
@@ -40,7 +40,7 @@ export const data = [
 
 ];
 
-export const data2 = [
+export const mod1dat2 = [
   {
     question: "Un elemento 'footer' normalmente NO contiene",
     choices: ["Información de autoría", "Mapa del sitio", "Documentos relacionados", "El Cuerpo o contenido principal"],

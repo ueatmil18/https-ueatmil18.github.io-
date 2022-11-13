@@ -1,12 +1,12 @@
 import { Question } from "../models/Question.js";
-import { data,data2 } from "./data.js";
+import { mod1dat1,mod1dat2 } from "./data.js";
 
-export const questions1 = data.map(
+export const questM1D1 = mod1dat1.map(
   (question) =>
     new Question(question.question, question.choices, question.answer)
 );
 
-export const questions2 = data2.map(
+export const questM1D2 = mod1dat2.map(
   (question) =>
     new Question(question.question, question.choices, question.answer)
 );

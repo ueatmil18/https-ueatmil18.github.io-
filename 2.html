@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    
     <!-- Quiz Box -->
+ 
     <div id="quiz" class="quiz">
-      <h1>#YoProgramo Quiz  - Modulo 2</h1>
+      <h1>#YoProgramo Quiz <label id="quizNro">Nro</label>  - Modulo <label id="modNro">Nro</label></h1>
       <hr />
 
       <h1 id="question"></h1>
@@ -27,12 +29,12 @@
     <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      const mod = urlParams.get('mod');
+      const auxmod = urlParams.get('mod');
       var auxQuiz = urlParams.get('auxQuiz');
-
+      document.getElementById("modNro").innerText=auxmod;
+      document.getElementById("quizNro").innerText=auxQuiz;
       //  var auxQuiz = 1; 
     </script>
     <script src="modulo2/app.js" type="module"></script>
-    
   </body>
 </html>
