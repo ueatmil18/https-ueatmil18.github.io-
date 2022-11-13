@@ -1,7 +1,7 @@
 //@ts-check
 import { Quiz } from "./models/Quiz.js";
 import { UI } from "./models/UI.js";
-import { questM1D1, questM1D2 } from "./data/questions.js";
+import { questM1D1, questM2D1, questM2D2 } from "./data/questions.js";
 
 // Renderring the page
 const renderPage = (quiz, ui) => {
@@ -25,9 +25,13 @@ function main() {
     console.log("Preguntas = 1");
     qq = questM1D1;
   };
-  if(auxQuiz==2){
+  if(auxmod==2 && auxQuiz==1){
+    console.log("Preguntas = 1");
+    qq = questM2D1;
+  };
+  if(auxmod==2 && auxQuiz==2){
     console.log("Preguntas = 2");
-    qq = questM1D2;
+    qq = questM2D2;
   };
 
   const quiz = new Quiz(qq);
@@ -35,5 +39,5 @@ function main() {
 
 }
 
-console.log("Parametro:"+auxQuiz);
+//console.log("Parametro:"+auxQuiz);
 main();
