@@ -60,7 +60,7 @@ export const mod2dat1 = [
     answer: "Definir logica de la web",
   },
   {
-    question: "Un elemento <footer> normalmente NO contiene",
+    question: "Un elemento - footer - normalmente NO contiene",
     choices: ["Información de autoría", "Mapa del sitio", "Documentos relacionados", "El Cuerpo o contenido principal"],
     answer: "El Cuerpo o contenido principal",
   },
